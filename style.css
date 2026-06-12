@@ -275,32 +275,36 @@
     color: var(--text);
   }
 
-  .about-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-
   .stat-card {
     background: var(--bg3);
     border: 1px solid var(--border);
     padding: 20px;
   }
 
-  .stat-number {
-    font-family: 'Oswald', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    color: #fff;
-    line-height: 1;
+  .education-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
   }
 
-  .stat-label {
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-top: 6px;
+  .edu-item {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   border: 1px solid var(--border);
+   border-radius: 0px;
+   background: var(--bg3);
+  }
+
+  .logo-placeholder {
+   width: 60px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   object-fit: cover;
   }
 
   /* PROJECTS */
