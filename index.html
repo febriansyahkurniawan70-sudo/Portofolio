@@ -1,290 +1,348 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kurniawan Febrianshyah – Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Your Name</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">KF</a>
-  <ul class="nav-links">
+  <div class="bubble bubble-glass" style="width:260px; height:260px; top:60px; left:-80px;"></div>
+  <div class="bubble bubble-soft" style="width:420px; height:420px; top:10px; right:-140px;"></div>
+  <div class="bubble bubble-glass" style="width:120px; height:120px; top:520px; right:8%;"></div>
+  <div class="bubble bubble-soft" style="width:360px; height:360px; top:1300px; left:-120px;"></div>
+  <div class="bubble bubble-glass" style="width:160px; height:160px; top:2200px; right:-40px;"></div>
+  <div class="bubble bubble-soft" style="width:400px; height:400px; top:3100px; left:6%;"></div>
+  <div class="bubble bubble-glass" style="width:140px; height:140px; top:4000px; right:10%;"></div>
+  <div class="bubble bubble-soft" style="width:380px; height:380px; top:4900px; right:-100px;"></div>
+  <div class="bubble bubble-glass" style="width:180px; height:180px; top:5700px; left:4%;"></div>
+ 
+  <!-- ===== NAVBAR ===== -->
+  <div class="navbar-wrap">
+    <nav class="navbar">
+      <div class="logo">Alex<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu">☰</button>
+    </nav>
+  </div>
+ 
+  <!-- Menu mobile: elemen terpisah (bukan child dari .navbar) supaya posisinya selalu relatif ke layar, tidak numpuk di sekitar tombol -->
+  <ul class="mobile-nav-links" id="mobileNavLinks">
+    <li><a href="#home">Home</a></li>
     <li><a href="#about">About Me</a></li>
-    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#services">Services</a></li>
     <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-content">
-    <p class="hero-eyebrow">Siswa SMK Telkom Purwokerto</p>
-    <h1 class="hero-name">
-      <span>Kurniawan</span>
-      FEBRIANSHYAH
-    </h1>
-    <p class="hero-bio">
-      Pelajar yang bersemangat dalam membangun pengalaman digital — dari antarmuka web yang responsif hingga dunia game 2D/3D yang imersif.
-    </p>
-    <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">Lihat Projects</a>
-      <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+ 
+  <!-- ===== HOME ===== -->
+  <section id="home" class="hero">
+    <div class="hero-animate eyebrow"><span class="dot"></span> Terbuka untuk proyek baru</div>
+ 
+    <h1 class="hero-animate">Kurniawan Febriansyah</h1>
+ 
+    <div class="hero-animate hero-photo-wrap">
+      <div class="photo-glow"></div>
+      <div class="photo-bubble b1"></div>
+      <div class="photo-bubble b2"></div>
+      <div class="photo-bubble b3"></div>
+      <div class="hero-photo">
+        <!-- Ganti dengan foto asli: <img src="foto-kamu.jpg" alt="Alex Rivera"> -->
+        <img src="jj.png" alt="Kurniawan Febriansyah">
+      </div>
     </div>
-  </div>
+ 
+    <p class="hero-animate sub">Saya adalah seorang pelajar tingkat Sekolah Menengah Kejuruan yang tertarik dengan dunia rekayasa perangkat lunak, desain grafis, dan pengembangan game.</p>
+    <div class="hero-animate hero-actions">
+      <button class="btn btn-primary" onclick="document.getElementById('portfolio').scrollIntoView()">Lihat Karya</button>
+      <button class="btn btn-glass" onclick="document.getElementById('contact').scrollIntoView()">Hubungi Saya</button>
+    </div>
+    <div class="hero-animate scroll-cue">Scroll ke bawah<div class="arrow"></div></div>
+  </section>
+ 
+  <!-- ===== ABOUT ME ===== -->
+  <section id="about" class="soft">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Tentang Saya</div>
+        <h2>Sedikit cerita tentang perjalanan saya</h2>
+        <p>Mengenal lebih dekat siapa saya, apa yang saya kerjakan, dan nilai yang saya pegang dalam setiap proyek.</p>
+      </div>
+      <div class="about-grid">
+         <img src="jj.png" alt="Kurniawan Febriansyah">
+        <div class="about-text">
+          <p>Halo! Saya seorang pelajar di SMK Telkom Purwokerto yang memiliki ketertarikan mendalam pada dunia teknologi. Saya percaya bahwa hobi saya bermain game dan kecintaan saya pada proses ngoding bukanlah dua hal yang terpisah, melainkan kombinasi yang sempurna. Dari game, saya belajar strategi, pemecahan masalah, dan cara kerja sistem yang kompleks. Sedangkan dari ngoding, saya belajar menuangkan logika tersebut menjadi barisan kode yang fungsional. Berbekal semangat eksplorasi dan mimpi besar untuk menjadi seorang programmer profesional, saya terus mengasah keterampilan dalam pengembangan web dan teknologi digital untuk menghadirkan solusi serta karya yang berdampak.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Kemampuan</div>
+        <h2>Skill &amp; tools yang saya kuasai</h2>
+        <p>Beberapa kemampuan inti yang saya gunakan sehari-hari dalam mengerjakan proyek.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-bubble glass-card">
+          <div class="icon"><i class="devicon-html5-plain colored"></i></div>
+          <h4>HTML</h4>
+          <div class="bar"><span style="width:90%"></span></div>
+        </div>
+        <div class="skill-bubble glass-card">
+          <div class="icon"><i class="devicon-css3-plain colored"></i></div>
+          <h4>CSS</h4>
+          <div class="bar"><span style="width:80%"></span></div>
+        </div>
+        <div class="skill-bubble glass-card">
+          <div class="icon"><i class="devicon-javascript-plain colored"></i></div>
+          <h4>JavaScript</h4>
+          <div class="bar"><span style="width:75%"></span></div>
+        </div>
+        <div class="skill-bubble glass-card">
+          <div class="icon"><i class="fa-solid fa-palette"></i></div>
+          <h4>Desain Grafis</h4>
+          <div class="bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill-bubble glass-card">
+          <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <h4>Desain UI/UX</h4>
+          <div class="bar"><span style="width:70%"></span></div>
+        </div>
+        <div class="skill-bubble glass-card">
+          <div class="icon"><i class="devicon-csharp-plain colored"></i></div>
+          <h4>C#</h4>
+          <div class="bar"><span style="width:65%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== PORTFOLIO ===== -->
+  <section id="portfolio" class="soft">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Karya</div>
+        <h2>Proyek yang pernah saya kerjakan</h2>
+        <p>Beberapa hasil karya saya.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="project-card glass-card">
+          <img src="topzone.png" alt="Project One" class="project-thumb">
+          <div class="project-body">
+            <h4>TopZone</h4>
+            <p>TopZone adalah platform TopUp yang memungkinkan pengguna membeli item game seperti Diamond dan Gold.</p>
+          </div>
+        </div>
+        <div class="project-card glass-card">
+          <img src="visualnovel.png" alt="Project Two" class="project-thumb">
+          <div class="project-body">
+            <h4>Visual Novel "The Legends Of Ramayana"</h4>
+            <p>The Legends Of Ramayana adalah game visual novel yang mengisahkan kisah Ramayana dalam bentuk interaktif.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Pengalaman</div>
+        <h2>Perjalanan karier saya</h2>
+        <p>Ringkasan peran dan tanggung jawab yang pernah saya jalani.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="period">2015 — 2016</div>
+          <h4>TK</h4>
+          <div class="role-org">TK AL-Fairuz</div>
+          <p>Sebagai siswa di TK AL-Fairuz, saya belajar dasar-dasar akademik dan sosial.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="period">2016 — 2022</div>
+          <h4>SD</h4>
+          <div class="role-org">SD Negeri 2 Tanggeran</div>
+          <p>Sebagai siswa di SD Negeri 2 Tanggeran, saya mengembangkan keterampilan akademik dan sosial yang menjadi dasar untuk perkembangan selanjutnya.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="period">2022 — 2025</div>
+          <h4>SMP</h4>
+          <div class="role-org">SMP Negeri 2 Somagede</div>
+          <p>Sebagai siswa di SMP Negeri 2 Somagede, saya mengembangkan soft skills dan keterampilan akademik saya. Saya juga mulai tertarik pada coding saat SMP.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="period">2025 — Sekarang</div>
+          <h4>SMK</h4>
+          <div class="role-org">SMK Telkom Purwokerto</div>
+          <p>Sebagai siswa di SMK Telkom Purwokerto, saya mengenal lebih jauh tentang coding dan bagaimana cara membuat sebuah game sederhana. Dan di SMK Telkom saya juga aktif dalam berbagai kegiatan organisasi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="hero-photo">
-    <div class="photo-frame">
-      <div class="photo-placeholder">
-         <img src="jj.png" alt="Foto Kurniawan Febrianshyah">
+  <!-- ===== TESTIMONIALS (opsional, hapus section ini jika belum ada testimoni) ===== -->
+  <section id="achievements" class="soft">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Prestasi</div>
+      <h2>Prestasi yang saya capai</h2>
+    </div>
+    <div class="achv-grid">
+
+      <div class="achv-card glass-card">
+        <div class="achv-icon">🏆</div>
+        <div class="achv-year">2024</div>
+        <h3 class="achv-title">Juara 2 Festival Tunas Bahasa Ibu</h3>
+        <p class="achv-desc">Meraih posisi kedua pada lomba Sesorang dalam acara Festival Tunas Bahasa Ibu 2024.</p>
       </div>
-      <div class="photo-label">
-        <div class="photo-label-name">Kurniawan Febrianshyah</div>
-        <div class="photo-label-role">Siswa SMK Telkom Purwokerto</div>
+
+      <div class="achv-card glass-card">
+        <div class="achv-icon">🏆</div>
+        <div class="achv-year">2022</div>
+        <h3 class="achv-title">Juara 1 Khitobah</h3>
+        <p class="achv-desc">Meraih posisi pertama pada lomba Khitobah tingkat kecamatan 2022.</p>
       </div>
+
+      <div class="achv-card glass-card">
+        <div class="achv-icon">🏆</div>
+        <div class="achv-year">2022</div>
+        <h3 class="achv-title">Juara 2 Khitobah</h3>
+        <p class="achv-desc">Meraih posisi kedua pada lomba Khitobah tingkat Kabupaten 2022.</p>
+      </div>
+
     </div>
   </div>
 </section>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="section-header reveal">
-    <h2 class="section-title">About Me</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="about-grid">
-    <div class="about-text reveal">
-      <p>
-       Saya Kurniawan Febriansyah, seorang siswa SMK Telkom Purwokerto (X PPLG 6) yang memiliki antusiasme tinggi dalam membangun aplikasi web dan pengembangan game 2D/3d.
-      </p>
-      <p>
-       Bagi saya, aplikasi adalah alat untuk memecahkan masalah, sedangkan game adalah cara untuk menciptakan pengalaman yang mendalam. Fokus saya adalah menggabungkan UI/UX yang intuitif dengan logika pemrograman yang efisien untuk menghasilkan produk digital yang tidak hanya berfungsi dengan baik, tetapi juga nyaman digunakan.
-      </p>
-      <p>
-       Saya selalu bersemangat untuk mempelajari teknologi baru, bereksperimen dengan fitur-fitur interaktif (seperti CSS hover effects), dan membawa proyek dari sekadar konsep di kertas menjadi produk yang dapat dimainkan atau digunakan secara nyata.
-      </p>
-    </div>
-    <div class="about-stats reveal">
-      <div class="stat-card">
-         <div class="skill-item"><i class="fa-brands fa-html5"></i> HTML</div>
+ 
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Kontak</div>
+        <h2>Mari berkolaborasi</h2>
+        <p>Punya proyek atau ide? Kirimkan pesan, saya akan membalas secepatnya.</p>
       </div>
-      <div class="stat-card">
-        <div class="skill-item"><i class="fa-brands fa-css3-alt"></i> CSS</div>
-      </div>
-      <div class="stat-card">
-        <div class="skill-item"><i class="fa-brands fa-figma"></i> Figma</div>
-    </div>
-
-    <div class="education-list">
-        
-      <div class="edu-item">
-              <img src="Alfairuz.png" alt="Logo TK" class="logo-placeholder">
-            <div>
-                <strong>TK Al-Fairuz</strong><br>
-                <small>(2015-2016)</small>
-            </div>
-      </div>
-      <div class="edu-item">
-            <img src="logosd.png" alt="Logo SD" class="logo-placeholder">
-            <div>
-                <strong>SD Negeri 2 Tanggeran</strong><br>
-                <small>(2016-2022)</small>
-            </div>
-      </div>
-      <div class="edu-item">
-          <a href="https://smpn2somagede.sch.id/" target="_blank" rel="noopener noreferrer">
-            <img src="spenduso.png" alt="Logo SMP" class="logo-placeholder">
-          </a>
-            <div>
-                <strong>SMP Negeri 2 Somagede</strong><br>
-                <small>(2022-2025)</small>
-            </div>
-      </div>
-      <div class="edu-item">
-          <a href="https://smktelkom-pwt.sch.id/" target="_blank" rel="noopener noreferrer">
-            <img src="logotelkom.png" alt="Logo SMK" class="logo-placeholder">
-          </a>
-            <div>
-                <strong>SMK Telkom Purwokerto</strong><br>
-                <small>Jurusan PPLG (2025-Sekarang)</small>
-            </div>
-      </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section class="projects" id="projects">
-  <div class="section-header reveal">
-    <h2 class="section-title">Projects</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="projects-grid">
-
-    <div class="project-card reveal">
-      <div class="project-thumb thumb-1">
-        <img src="visualnovel.png" style="width:100%; height:100%; object-fit:cover;">
-      </div>
-      <div class="project-tag">Game Visual Novel 2D</div>
-      <div class="project-overlay">
-        <div class="project-title">The Legends Of Ramayana</div>
-        <div class="project-type">Ren'Py</div>
-      </div>
-    </div>
-
-    <div class="project-card reveal">
-      <div class="project-thumb thumb-2">
-        <img src="topzone.png" style="width:100%; height:100%; object-fit:cover;">
-      </div>
-      <div class="project-tag">WEB TopUp</div>
-      <div class="project-overlay">
-        <div class="project-title">TopZone</div>
-        <div class="project-type">HTML · CSS · JavaScript</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ACHIEVEMENTS & EXPERIENCE -->
-<section class="achievements" id="achievements">
-  <div class="section-header reveal">
-    <h2 class="section-title">Achievements &amp; Experience</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="achieve-grid">
-
-    <div class="achieve-card reveal">
-      <div class="achieve-title">Web Frontend Skillset</div>
-      <div class="achieve-desc">HTML5, CSS3, JavaScript — membangun UI responsif dan modern</div>
-      <span class="achieve-badge">Core Skill</span>
-    </div>
-
-    <div class="achieve-card reveal">
-      <div class="achieve-title">2D Game Developer</div>
-      <div class="achieve-desc">Pengembangan game Visual Novel 2D menggunakan Ren'Py</div>
-      <span class="achieve-badge">Core Skill</span>
-    </div>
-
-    <div class="achieve-card reveal">
-      <div class="achieve-title">1st Khitobah</div>
-      <div class="achieve-desc">Juara 1 lomba Khitobah tingkat Kecamatan</div>
-      <span class="achieve-badge">Prestasi</span>
-    </div>
-
-    <div class="achieve-card reveal">
-      <div class="achieve-title">2nd FTBI "Sesorah"</div>
-      <div class="achieve-desc">Juara 2 Festival Tunas Bahasa Ibu cabang Sesorah Bahasa Jawa</div>
-      <span class="achieve-badge">Prestasi</span>
-    </div>
-
-    <div class="achieve-card reveal">
-      <div class="achieve-title">2nd Khitobah</div>
-      <div class="achieve-desc">Juara 2 lomba Khitobah di kompetisi tingkat Kabupaten</div>
-      <span class="achieve-badge">Prestasi</span>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="section-header reveal">
-    <h2 class="section-title">Hubungi Saya</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="contact-grid">
-    <div class="contact-intro reveal">
-      <p>
-        Tertarik untuk berkolaborasi, mendiskusikan project, atau sekadar menyapa? Saya selalu terbuka untuk kesempatan baru dan percakapan yang bermakna.
-      </p>
-      <p>
-        Silakan hubungi melalui platform di bawah ini atau kirim pesan langsung.
-      </p>
-      <div class="contact-links">
-        <a href="" class="contact-link">
-          <div class="contact-link-icon">✉</div>
-          <div>
-            <div class="contact-link-label">Email</div>
-            <div>febriansyahkurniawan70@gmail.com</div>
+      <div class="contact-wrap">
+        <div class="contact-form glass-card">
+          <div class="field"><label>Nama</label><input type="text" placeholder="Nama lengkap"></div>
+          <div class="field"><label>Email</label><input type="email" placeholder="nama@email.com"></div>
+          <div class="field"><label>Pesan</label><textarea placeholder="Tulis pesan kamu di sini..."></textarea></div>
+          <button class="btn btn-primary" style="width:100%;">Kirim Pesan</button>
+        </div>
+        <div class="contact-info">
+          <h3>Terhubung langsung</h3>
+          <p>Kamu juga bisa menghubungi saya lewat email atau media sosial di bawah ini.</p>
+          <div class="socials">
+             <a href="mailto:febriansayhkurniawan70@gmail.com" class="social-bubble">
+               <i class="fa-solid fa-envelope"></i>
+             </a>
+             <a href="https://wa.me/6281239203896" target="_blank" class="social-bubble">
+               <i class="fa-brands fa-whatsapp"></i>
+             </a>
+             <a href="https://www.instagram.com/_chitozzzzzz" target="_blank" class="social-bubble">
+               <i class="fa-brands fa-instagram"></i>
+             </a>
           </div>
-        </a>
-        <a href="https://github.com/febriansyahkurniawan70-sudo" target="_blank" class="contact-link">
-          <div class="contact-link-icon">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-          </div>
-          <div>
-            <div class="contact-link-label">GitHub</div>
-            <div>febriansyahkurniawan70-sudo</div>
-          </div>
-        </a>
-        <a href="https://www.instagram.com/_chitozzzzzz?igsh=NHFhODNhYnBpYzR0" target="_blank" class="contact-link">
-          <div class="contact-link-icon">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-          </div>
-          <div>
-            <div class="contact-link-label">Instagram</div>
-            <div>@_Chitozzzzzz</div>
-          </div>
-        </a>
+        </div>
       </div>
     </div>
-
-    <div class="contact-form reveal">
-      <div class="form-group">
-        <label for="nama">Nama</label>
-        <input type="text" id="nama" placeholder="Nama Anda">
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="email@gmail.com">
-      </div>
-      <div class="form-group">
-        <label for="pesan">Pesan</label>
-        <textarea id="pesan" placeholder="Tulis pesan Anda di sini..."></textarea>
-      </div>
-      <button class="btn btn-primary" onclick="handleSend()">Kirim Pesan</button>
-      <p id="form-msg" style="font-size:12px; color:#888; margin-top:4px; display:none;">Pesan terkirim! Terima kasih.</p>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-name">Kurniawan Febrianshyah</div>
-  <div class="footer-copy">© 2026 · All rights reserved</div>
-</footer>
-
-<script>
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
+  </section>
+ 
+  <footer>
+    © 2026 Kurniawan Febriansyah.
+  </footer>
+ 
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const mobileNavLinks = document.getElementById('mobileNavLinks');
+    navToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mobileNavLinks.classList.toggle('open');
+      navToggle.textContent = mobileNavLinks.classList.contains('open') ? '✕' : '☰';
+    });
+    mobileNavLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileNavLinks.classList.remove('open');
+      navToggle.textContent = '☰';
+    }));
+    // tutup menu kalau user tap di luar area menu
+    document.addEventListener('click', (e) => {
+      if (mobileNavLinks.classList.contains('open') && !mobileNavLinks.contains(e.target) && e.target !== navToggle) {
+        mobileNavLinks.classList.remove('open');
+        navToggle.textContent = '☰';
       }
     });
-  }, { threshold: 0.1 });
-  reveals.forEach(el => observer.observe(el));
-
-  function handleSend() {
-    const nama = document.getElementById('nama').value;
-    const email = document.getElementById('email').value;
-    const pesan = document.getElementById('pesan').value;
-    if (!nama || !email || !pesan) {
-      alert('Mohon isi semua field terlebih dahulu.');
-      return;
-    }
-    const msg = document.getElementById('form-msg');
-    msg.style.display = 'block';
-    document.getElementById('nama').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('pesan').value = '';
-  }
-</script>
-
+ 
+    // ===== Navbar animation on scroll: kecil di awal, memanjang menampilkan menu saat discroll =====
+    const navbarWrap = document.querySelector('.navbar-wrap');
+    const navbarEl = document.querySelector('.navbar');
+ 
+    const sections = document.querySelectorAll('section[id]');
+    const links = document.querySelectorAll('.nav-links a, .mobile-nav-links a');
+ 
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+ 
+      // navbar memanjang & menu muncul begitu mulai discroll, tetap terlihat (tidak hilang)
+      navbarEl.classList.toggle('scrolled', y > 24);
+ 
+      // active link highlight
+      let current = '';
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 140;
+        if (y >= top) current = sec.getAttribute('id');
+      });
+      links.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    });
+ 
+    // ===== Reveal-on-scroll untuk semua section (bukan hero) =====
+    const revealSelectors = '.section-head, .about-photo, .about-text, .skill-bubble, .project-card, .timeline-item, .service-card, .achieve-bubble, .testi-card, .contact-form, .contact-info';
+    document.querySelectorAll(revealSelectors).forEach(el => el.classList.add('reveal-init'));
+ 
+    // beri jeda animasi berurutan (stagger) untuk elemen dalam satu grid
+    const staggerGroups = document.querySelectorAll('.skills-grid, .portfolio-grid, .services-grid, .achieve-grid, .testi-grid, .timeline, .facts');
+    staggerGroups.forEach(group => {
+      Array.from(group.children).forEach((child, i) => {
+        child.classList.add('reveal-init');
+        child.style.transitionDelay = (i * 0.08) + 's';
+      });
+    });
+ 
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+ 
+    document.querySelectorAll('.reveal-init').forEach(el => revealObserver.observe(el));
+  </script>
 </body>
 </html>
